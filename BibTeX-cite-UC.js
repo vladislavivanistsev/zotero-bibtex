@@ -10,7 +10,7 @@
 	"inRepository": true,
 	"browserSupport": "gcsv",
 	"displayOptions": {
-		"exportCharset": "UTF-8",
+		"exportCharset": "ISO-8859-1",
 		"exportNotes": false,
 		"exportFileData": false
 	},
