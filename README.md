@@ -6,7 +6,7 @@
 
 3) Restart Zotero.
 
-4) Go to Zotero Tools > Preferences > Export and choose BibTeX-cite-UC in the Default Output Format dropdown menu.
+4) Go to Zotero Tools > Preferences > Export and choose BibTeX-cite-UC in the Default Output Format drop-down menu.
 
 # Exporting a bib-file
 
@@ -18,12 +18,12 @@
 
 # Adding references to LaTeX
 
-1) To copy a citation to LaTeX, the desired item needs to be highlighted in Zotero and the key combination ctrl-shift-c pressed. 
+1) To copy a citation to LaTeX, the desired item needs to be highlighted in Zotero, and the key combination ctrl-shift-c pressed. 
 
 2) The reference is inserted into LaTeX with ctrl-v.
 
 # Some Zotero tricks
-* Bibliographies can be merged and modified manually with any text redactor.
-* Bibliographies may have redundant entries, but must have all entries that are cited in text. 
+* Bibliographies can be merged and modified manually with any text editor.
+* Bibliographies may have redundant entries but must have all entries that are cited in the text. 
 * A useful trick is to assign a color to the tag in the bottom left menu. That enables the use of hotkeys (number keys derived from the tag placement) to add the tag to Zotero items.
 * When citing multiple items, highlight all of them before pressing ctrl-shift-c.
