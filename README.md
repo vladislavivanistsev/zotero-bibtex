@@ -27,3 +27,11 @@
 * Bibliographies may have redundant entries but must have all entries that are cited in the text. 
 * A useful trick is to assign a color to the tag in the bottom left menu. That enables the use of hotkeys (number keys derived from the tag placement) to add the tag to Zotero items.
 * When citing multiple items, highlight all of them before pressing ctrl-shift-c.
+
+# Journals for RSS
+1. Export "Exported Items.ris" from Zotero to a directory
+2. Run "python RSS.py" in that directory
+3. Examine journals.log
+4. Find up to 20 rss feed of the most relevant journals and combine them at rssunify.com
+5. Filter the combined feed with regex or by a keyword at siftrss.com
+6. Start reading the refined feed in the UT cloud RSS reader or Zotero
