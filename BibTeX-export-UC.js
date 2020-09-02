@@ -1,6 +1,6 @@
 {
   "translatorID": "9cb70025-a888-4a29-a210-93ec52da4MTS",
-	"label": "BibTeX-MTS-UC",
+	"label": "BibTeX-export-UC",
 	"creator": "Vladislav Ivanistsev from Simon Kornblith and Richard Karnesky",
 	"target": "bib",
 	"minVersion": "2.1.9",
