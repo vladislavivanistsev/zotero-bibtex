@@ -1,26 +1,27 @@
-#1. Export "Exported Items.ris" from Zotero to a directory
-#2. Run "python RSS.py" in that directory
-#3. Examine journals.log
-#4. Find up to 20 rss feed of the most relevant journals and combine them at rssunify.com
-#5. Filter the combined feed with regex or by a keyword at siftrss.com
-#6. Start reading the refined feed in the UT cloud RSS reader or Zotero
-
-
-f = open("Exported Items.ris").readlines()
+# Create a dictionary
 results={}
-for line in f:
-  if len(line.split())>0 and line.split()[0]=="T2":
-    name=" ".join(line.split()[2:])
-    if name in results:
-      results[name]+=1
-    else:
-      results[name]=1
 
-f=open("journals.log","w")
+# Parse the given ris file to count Journals
+file = open("Exported Items.ris", "r")
+for line in file.readlines():
+    if len(line.split())>0 and line.split()[0]=="T2":
+        name = " ".join(line.split()[2:])
+        if name in results:
+            results[name]+=1
+        else:
+            results[name]=1
+file.close()
+
+# Write log file with sorted journal names
+results = dict(sorted(results.items(), key=lambda result: result[0]))
+out = open("journals-names.log","w")
 for result in results:
-  f.write("%s %d\n"%(result,results[result]))
+     out.write("{0} {1}\n".format(results[result],result))
+out.close
 
-#checksum=0
-#for result in results:
-#  checksum+=results[result]
-
+# Write log file with sorted journal names
+results = dict(sorted(results.items(), key=lambda result: result[1]), reverse=True)
+out = open("journals-counts.log","w")
+for result in results:
+     out.write("{0} {1}\n".format(results[result],result))
+out.close
